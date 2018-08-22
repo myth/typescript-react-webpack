@@ -9,7 +9,7 @@ pipeline:
       - /tmp/drone-cache:/cache
 
   # Install dependencies, build and test the typescript code
-  frontend:
+  build:
     image: node:10-alpine
     group: build
     commands:
