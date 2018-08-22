@@ -1,0 +1,8 @@
+# VS Code
+.vscode/
+
+# NodeJS / NPM / Yarn
+dist/
+node_modules/
+npm-error.log
+yarn-error.log

@@ -1,0 +1,40 @@
+{
+  "name": "typescript-react-webpack",
+  "version": "3.16.4",
+  "description": "Boilerplate for Typescript 3 React 16 and Webpack 4",
+  "main": "app.js",
+  "repository": "https://github.com/myth/typescript-react-webpack",
+  "author": "myth",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run build:dev",
+    "build:dev": "./node_modules/webpack/bin/webpack.js --mode development --config webpack.config.js",
+    "build:prod": "./node_modules/webpack/bin/webpack.js --mode production --config webpack.config.js",
+    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --colors --port 3000 --open",
+    "test": "echo \"No tests defined.\""
+  },
+  "dependencies": {
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.22.1",
+    "ts-loader": "^4.5.0",
+    "typescript": "^3.0.1",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}

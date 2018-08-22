@@ -1,0 +1,27 @@
+pipeline:
+  # Restore potentially cached build folders
+  restore-cache:
+    image: drillster/drone-volume-cache
+    restore: true
+    mount:
+      - node_modules
+    volumes:
+      - /tmp/drone-cache:/cache
+
+  # Install dependencies, build and test the typescript code
+  frontend:
+    image: node:10-alpine
+    group: build
+    commands:
+      - yarn install
+      - yarn run build:prod
+      - yarn run test
+
+  # Rebuild cache volume from current build workspace
+  rebuild-cache:
+    image: drillster/drone-volume-cache
+    rebuild: true
+    mount:
+      - ./node_modules
+    volumes:
+      - /tmp/drone-cache:/cache
