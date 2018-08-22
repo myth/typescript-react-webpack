@@ -1,4 +1,4 @@
-Typescript 3 React 16 Webpack 4 boilerplate
+React 16 in Typescript 3 using Webpack 4
 ====
 
 [![Build Status](https://ci.ulv.io/api/badges/myth/typescript-react-webpack/status.svg)](https://ci.ulv.io/myth/typescript-react-webpack)
@@ -17,7 +17,7 @@ Features:
 - Source Maps / Source Map Loader
 - PostCSS with Autoprefixer
 - UglifyJS and OptimizeCSSAssets minimizers for production optimization
-- Hot Module Reload (HRM) support
+- Hot Module Reload (HMR) support
 
 #### Install
 
