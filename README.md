@@ -8,7 +8,7 @@ Boilerplate for starting a React 16 application in Typescript 3 using Webpack 4.
 Features:
 
 - React 16
-- Typescript 3
+- Typescript 3 (transpiling to ES2015)
 - Webpack 4
 - Webpack Dev Server 3
 - CSS Loader
